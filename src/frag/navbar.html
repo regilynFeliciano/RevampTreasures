@@ -1,23 +1,184 @@
-<!DOCTYPE html>
-<head>
-  <link rel="import" href="header.html"/>
-</head>
-<nav id="page-header">
-  <div class="nav-wrapper">
-    <div class="brand-logo center">
+<!--<!DOCTYPE html>-->
+<!--<head>-->
+  <!--<link rel="import" href="header.html"/>-->
+<!--</head>-->
+<!--<body class="yellow lighten-5">-->
+
+  <div class="menu-bar container">
+    <div class="contact-icons hide-on-small-only">
+      <div class="">
+        <a href="mailto:treasurescakes@gmail.com"><i class="gradient-gmail far fa-envelope grey-text text-darken-3"></i></a>
+        <a href="https://www.facebook.com/treasurescakes/"><i class="gradient-facebook fab fa-facebook-square grey-text text-darken-3"></i></a>
+        <a href="https://www.instagram.com/treasurescakes/"><i class="gradient-insta fab fa-instagram grey-text text-darken-3"></i></a>
+      </div>
+      <!--todo: w3schools telephone standards for phone and address-->
+      <p><a href="#" type="tel"><i class="fas fa-phone grey-text text-darken-3">&nbsp;(306) 546-5599</i></a></p>
+
+      <!--<ul>-->
+      <!--<li><a href="mailto:treasurescakes@gmail.com"><i class="far fa-envelope"></i></a></li>-->
+      <!--<li><a href="https://www.facebook.com/treasurescakes/"><i class="fab fa-facebook-square"></i></a></li>-->
+      <!--<li><a href="https://www.instagram.com/treasurescakes/"><i class="fab fa-instagram"></i></a></li>-->
+      <!--<li><a href="#"><i class="fas fa-phone">&nbsp;(306) 546-5599</i></a></li>-->
+    <!--</ul>-->
+    </div>
+    <div class="brand-logo center hide-on-small-only">
       <img alt="Image for Treasures logo" src="../img/tc_logo.png">
     </div>
-    <a href="#" data-activates="side-nav-bar" class="button-collapse">
-      <i class="material-icons">menu</i>
-      <!--LINKS HERE-->
-      <ul class="materialize-red-text">
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-      </ul>
-    </a>
 
+    <!--<a href="#" data-activates="side-nav-bar" class="button-collapse">-->
+      <!--<i class="material-icons">menu</i>-->
+    <!--</a>-->
+      <!--LINKS HERE-->
+    <div class="table center hide-on-small-only">
+      <ul class="navigation center black-text">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Cake Order</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="bistro-link grey darken-3"><a href="#">Bistro</a></li>
+      </ul>
+    </div>
   </div>
-</nav>
+
+  <!--Sticky nav-->
+  <nav class="z-depth-0 white">
+    <div class="nav-wrapper ">
+      <img alt="Image for Treasures logo" src="../img/tc_logo.png">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="black-text" href="#">Home</a></li>
+        <li><a class="black-text" href="#">About Us</a></li>
+        <li><a class="black-text" href="#">Cake Order</a></li>
+        <li><a class="black-text" href="#">Gallery</a></li>
+        <li><a class="black-text" href="#">Contact</a></li>
+        <li><a class="black-text" href="#">Bistro</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--&lt;!&ndash;carousel for slider&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="hidden">&ndash;&gt;-->
+  <!--&lt;!&ndash;<div class="carousel carousel-slider center">&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-item" href="#one!"><img src="../img/ss10.jpg"></a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-item" href="#two!"><img src="../img/ss9.jpg"></a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-item" href="#three!"><img src="../img/ss3.jpg"></a>&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="carousel-item" href="#four!"><img src="../img/ss12.jpg"></a>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;SLIDER&ndash;&gt;-->
+
+  <!--<div class="slider">-->
+    <!--< class="slides">-->
+      <!--<?php-->
+        <!--$files = scandir('../img/');-->
+        <!--foreach($files as $file) {-->
+          <!--if($file !== "." && $file !== "..") {-->
+            <!--echo "<li><img src='$file'/></li>";-->
+          <!--}-->
+        <!--}-->
+      <!--?>-->
+      <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../img/intro-bg.jpg">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="caption center-align">&ndash;&gt;-->
+          <!--&lt;!&ndash;<h3>This is our big Tagline!</h3>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</li>&ndash;&gt;-->
+      <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../img/ss1.jpg">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="caption left-align">&ndash;&gt;-->
+          <!--&lt;!&ndash;<h3>Left Aligned Caption</h3>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</li>&ndash;&gt;-->
+      <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../img/Treasurescakes.jpg">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="caption right-align">&ndash;&gt;-->
+          <!--&lt;!&ndash;<h3>Left Aligned Caption</h3>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</li>&ndash;&gt;-->
+      <!--&lt;!&ndash;<li>&ndash;&gt;-->
+        <!--&lt;!&ndash;<img src="../img/locate.jpg">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="caption center-align">&ndash;&gt;-->
+          <!--&lt;!&ndash;<h3>Left Aligned Caption</h3>&ndash;&gt;-->
+          <!--&lt;!&ndash;<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</li>&ndash;&gt;-->
+    <!--</ul>-->
+  <!--</div>-->
+
+  <!--&lt;!&ndash;CAKES MADE WITH LOVE ICONS&ndash;&gt;-->
+  <!--<div class="container">-->
+    <!--<h1 class="center">Cakes Made With Love</h1>-->
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta, ex id consequat tristique, ipsum nibh ultricies ligula, id scelerisque libero orci quis libero.-->
+      <!--Nulla imperdiet varius sem sit amet vehicula...</p>-->
+
+    <!--<div id="cake_options" class="container center row">-->
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+
+      <!--<div class="cake_option col s4">-->
+        <!--<i class="far fa-times-circle"></i>-->
+        <!--<span>Lorem ipsum dolor</span>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+
+  <!--<footer class="page-footer  grey darken-2">-->
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--<div class="col l6 s12">-->
+          <!--<h5 class="white-text">Footer Content</h5>-->
+          <!--<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>-->
+        <!--</div>-->
+        <!--<div class="col l4 offset-l2 s12">-->
+          <!--<h5 class="white-text">Links</h5>-->
+          <!--<ul>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="footer-copyright">-->
+      <!--<div class="container">© 2014 Copyright Text-->
+        <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</footer>-->
+
+  <!--&lt;!&ndash;Import jQuery before materialize.js&ndash;&gt;-->
+  <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+
+  <!--&lt;!&ndash; Compiled and minified JavaScript &ndash;&gt;-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>-->
+
+  <!--<script src="../js/main.js"></script>-->
+  <!--<script src="../js/slider-images.js"></script>-->
+<!--</body>-->

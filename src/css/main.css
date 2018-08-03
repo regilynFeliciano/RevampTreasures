@@ -91,18 +91,166 @@ textarea {
    ========================================================================== */
 
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /*background-color: #f4f4ec;*/
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.gradient-insta:hover {
+  text-align: center;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+
+.gradient-facebook:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d7dce), to(#3b5998));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+
+.gradient-gmail:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed4d37), to(#d84d38));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+
+/**************************************
+  Navbar, containing menu items and logo and contact icons
+*/
+.menu-bar{
+  overflow: hidden;
+  /*position: fixed; !* Set the navbar to fixed position *!*/
+  top: 0; /* Position the navbar at the top of the page */
+  height: 16em;
+  width: 100%; /* Full width */
+}
+
+.table {
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+}
+
+.navigation {
+  /*color: #000;*/
+  /*padding: 3em;*/
+  min-width: 696px;
+  list-style: none;
+  padding-top: 1em;
+}
+
+.navigation li {
+  /*border-radius: 3em;*/
+  /*padding: 3em;*/
+  display: inline;
+  margin: 1em;
+}
+
+.navigation li a {
+  color:inherit;
+}
+.navigation li:hover {
+  color:darkgray;
+}
+
+.bistro-link {
+  /*background-color: black;*/
+  border-radius: .25em;
+  color: white;
+  padding: .25em 1.25em;
+}
+
+.navigation .bistro-link:hover {
+  background-color: darkgray;
+  color: white;
+}
+.brand-logo{
+  margin-top: 2em;
+}
+
+.contact-icons{
+  position: absolute;
+  top: 2em;
+  right: 4em;
+  display: inline;
+}
+.contact-icons div a i{
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.nav-wrapper {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.brand-logo {
+  padding-top: 2em;
+}
+.nav-wrapper img {
+  height:auto;
+  width:10%;
+  padding: 1px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/**************************************
+  Carousel
+*/
+
+.carousel {
+  height: 400px;
+  background-color: #5a5a5a;
+}
+
+.carousel-slider .carousel-item img {
+  height:auto;
+  width:auto;
+  background-color: #5a5a5a;
+  background-repeat: no-repeat;
+}
 
 
+/**************************************
+  Fonts, headers
+*/
 
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4em;
+  /*padding-top: 3em;*/
+}
 
+p {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 2em;
+}
 
+/*#cake_options {*/
+  /*display: inline;*/
+/*}*/
+#cake_options .cake_option {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 2em;
+}
 
-
-
-
-
-
-
+#cake_options .cake_option i{
+  font-size: 6em;
+}
+#cake_options .cake_option span{
+  display: block;
+  padding-top:1em;
+}
 
 
 
