@@ -1,0 +1,23 @@
+name: Dev-Deploy-AccessWebspace
+on:
+  push:
+    branches:    
+      - develop
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Deploying to Yash-Access-Webspace
+    - name: ftp-action
+      uses: sebastianpopp/ftp-action@v1.1.0
+      with:
+        host: users.accesscomm.ca
+        user: yashghatti
+        password: ghattinet_1995
+        localDir: .
+        remoteDir: RevampTreasures
