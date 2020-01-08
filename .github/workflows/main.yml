@@ -1,6 +1,9 @@
-name: CI
+name: [DEV] Deploy to 
 
-on: [push]
+on:
+  push:
+    branches:
+    - develop
 
 jobs:
   build:
