@@ -20,4 +20,4 @@ jobs:
         user: yashghatti
         password: ghattinet_1995
         localDir: .
-        remoteDir: test
+        remoteDir: RevampTreasures
