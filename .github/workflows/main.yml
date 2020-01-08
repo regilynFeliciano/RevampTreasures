@@ -11,12 +11,11 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Deploying to Yash-Access-Webspace
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+    - name: ftp-action
+      uses: sebastianpopp/ftp-action@v1.1.0
       with:
-        ftp_server: users.accesscomm.ca
-        ftp_username: yashghatti
-        ftp_password: ghattinet_1995
-        method: ftp
-        port: 21
-        remote_dir: test
+        host: users.accesscomm.ca
+        user: yashghatti
+        password: ghattinet_1995
+        localDir: .
+        remoteDir: test
