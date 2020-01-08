@@ -1,0 +1,22 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      with:
+        ftp_server: users.accesscomm.ca
+        ftp_username: yashghatti
+        ftp_password: ghattinet_1995
+        method: ftp
+        port: 21
+        remote_dir: test
