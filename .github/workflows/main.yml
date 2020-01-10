@@ -1,4 +1,4 @@
-name: Dev-Deploy-AccessWebspace
+name: Deploy-Test-TreasuresCakes-Com
 on:
   push:
     branches:    
@@ -11,14 +11,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Deploying to Yash-Access-Webspace
+    - name: Deploying to test.treasurescakes.com
+      run: echo Deploying to test.treasurescakes.com
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ftp.treasurescakes.ca
         FTP_USERNAME: ikstransfer@treasurescakes.ca
-        FTP_PASSWORD: cakes_2020
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         REMOTE_DIR: /tc-test
         ARGS: --delete --delete-excluded --verbose --exclude-glob=*.iml  --exclude-glob=.idea/** --exclude-glob=.git/** --exclude-glob=.github/**
 
