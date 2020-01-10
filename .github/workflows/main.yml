@@ -20,5 +20,4 @@ jobs:
         FTP_USERNAME: ikstransfer@treasurescakes.ca
         FTP_PASSWORD: cakes_2020
         REMOTE_DIR: /tc-test
-        ARGS: --delete --delete-excluded --verbose --exclude-glob=**/.git*/** --exclude-glob=**/.git** --exclude=*.iml --exclude-glob=**/.idea/**
-
+        ARGS: --delete --delete-excluded --verbose --exclude=*.iml
