@@ -18,7 +18,7 @@ jobs:
         npm run build-dev
 
     - name: List output files
-        run: ls
+      run: ls
 
     - name: Deploying to test.treasurescakes.com
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
