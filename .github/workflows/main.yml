@@ -11,9 +11,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
+    - name: NPM Install and Build (No minify)
+      run: |
+        npm install
+        npm run build-dev
+
     - name: Deploying to test.treasurescakes.com
-      run: echo Deploying to test.treasurescakes.com
-    - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ftp.treasurescakes.ca
