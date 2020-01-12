@@ -19,6 +19,7 @@ jobs:
         FTP_SERVER: ftp.treasurescakes.ca
         FTP_USERNAME: ikstransfer@treasurescakes.ca
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        LOCAL_DIR: /dist
         REMOTE_DIR: /tc-test
         ARGS: --delete --delete-excluded --verbose --exclude-glob=*.iml  --exclude-glob=.idea/** --exclude-glob=.git/** --exclude-glob=.github/**
 
