@@ -1,0 +1,4 @@
+- TODO install wordpress locally and configure DB
+- TODO play around with wordpress and do samples
+- TODO install dolcino and add pages with common header and footer
+- TODO migrate to dev
