@@ -12,21 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: NPM Install and Build-Dev (No minify)
-      run: |
-        npm install
-        npm run build-dev
-
-    - name: List output files
-      run: ls
-
     - name: Deploying to test.treasurescakes.com
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ftp.treasurescakes.ca
         FTP_USERNAME: ikstransfer@treasurescakes.ca
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        LOCAL_DIR: dist
+        LOCAL_DIR: wordpress
         REMOTE_DIR: /tc-test
         ARGS: --delete --delete-excluded --verbose --exclude-glob=*.iml  --exclude-glob=.idea/** --exclude-glob=.git/** --exclude-glob=.github/**
 
