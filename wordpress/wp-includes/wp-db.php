@@ -576,7 +576,7 @@ class wpdb {
 	 * @since 3.9.0
 	 * @var bool
 	 */
-	private $use_mysqli = false;
+	private $use_mysqli = true;
 
 	/**
 	 * Whether we've managed to successfully connect at some point
