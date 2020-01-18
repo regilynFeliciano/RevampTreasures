@@ -11,6 +11,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    
+    - name: Update wp-config DB Name
+      uses: jacobtomlinson/gha-find-replace@0.1.1
+      with:
+        include: wp-config
+        find: "define( 'DB_NAME', 'wp_local_db' );"
+        replace: "define( 'DB_NAME', 'treasure_cakes_dev' );" 
+        
+    - name: Update wp-config DB Host and Port
+      uses: jacobtomlinson/gha-find-replace@0.1.1
+      with:
+        include: wp-config
+        find: "define( 'DB_HOST', 'localhost:3308' );"
+        replace: "define( 'DB_HOST', 'localhost:3306' );" 
 
     - name: Deploying to test.treasurescakes.com
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
